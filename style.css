@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+}
+
+.main-container {
+    width: 65%;
+    margin: auto;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.group-image {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width:90%;
+        font-size: 1rem;
+    }
+  }
