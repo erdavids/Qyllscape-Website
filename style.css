@@ -1,17 +1,153 @@
-body {
-    background-color: bisque;
+/* Full Document */
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #dfbd98;
 }
 
+p {
+    font-size: 18px;
+}
+
+/* Organization */
+
 .main-container {
-    width: 65%;
+    width: 75%;
     margin: auto;
     margin-top: 4rem;
     font-size: 1.5rem;
 }
 
-.group-image {
-    max-width: 100%;
+/* Info Images Specifically */
+.image-container {
+    display: flex;
+    justify-content: center;
 }
+
+.banner-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.group-image {
+    max-width: 90%;
+    /* margin: 10px; */
+    ;
+}
+
+/* Divider */
+hr.solid {
+    border-top: 1px solid grey;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the comparison table */
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+    border: 1px solid black;
+  }
+  
+  /* Style for table headers */
+  .comparison-table th {
+    background-color: black;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style for table data cells */
+  .comparison-table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  /* Alternating row colors */
+  .comparison-table tbody tr:nth-child(even) {
+    background-color: black;
+  }
+
+/* Buttons */
+.wishlist-button {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #798e9c;
+    display: inline-block;
+    border: 1px solid transparent;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #d4cdbc;
+}
+
+a:link {
+    color: white;
+}
+
+.centered-stuff {
+    display: flex;
+    justify-content: center;
+}
+
+/* Actual 'articles' Full {body, info} */
+.article-full {
+    margin-top: 1rem;
+    display: flex;
+    
+}
+
+.article-body {
+    float: left;
+    width: 50%;
+    /* border: 1px solid teal; */
+}
+
+.article-info {
+    float: left;
+    width: 50%;
+}
+
+
+.article-info-banner-1 {
+    background-color:rgb(246, 195, 64);
+    margin: 5px 5px 5px 5px;
+    height: 1.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-info-banner-2 {
+    background-color:rgb(229, 196, 112);
+    margin: 5px 5px 5px 5px;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* random */
+.disclaimer {
+    font-style:italic;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     .main-container {
