@@ -3,6 +3,7 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
+    font-size: 18px;
 }
 
 body {
@@ -13,13 +14,15 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1rem;
 }
+
+
 
 a {
     text-decoration: none;
     color: #ae756a;
-    font-size: 18px;
+    font-size: .8rem;
     font-weight: bold;
 }
 
@@ -49,6 +52,7 @@ a {
   /* padding: 20px; */
   border-radius: 100% 100% 0 0;
   overflow-x: hidden;
+  border: 1px solid rgb(229, 230, 216);
 }
 
 header {
@@ -58,11 +62,12 @@ header {
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 2% 2% 1% 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+    z-index: 4;
     /* background-color: #5a6a75; */
   }
 
@@ -78,11 +83,11 @@ header {
  .centered-header {
     width: 50%;
  }
-  .title {
+.title {
     color: #dfbd98;
     color: white;
-    font-size: 36px;
-    margin-left: 7%;
+    font-size: 2rem;
+    margin-left: 6%;
   }
 
   .wishlist-header-button {
@@ -136,7 +141,7 @@ header {
     width: 85%;
     margin: auto;
     margin-top: 0rem;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 /* Info Images Specifically */
@@ -254,7 +259,7 @@ a:link {
 .article-info-banner-1 {
     background-color:rgb(246, 195, 64);
     margin: 5px 5px 5px 5px;
-    height: 1.8rem;
+    /* height: 1.8rem; */
 
     display: flex;
     justify-content: center;
@@ -264,7 +269,7 @@ a:link {
 .article-info-banner-2 {
     background-color:rgb(229, 196, 112);
     margin: 5px 5px 5px 5px;
-    height: 1.8rem;
+    /* height: 1.8rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,13 +307,20 @@ a:link {
     margin: 15px;
     padding: 5px;
     background-color: transparent;
+    border: 1px solid red;
   }
 @media screen and ((max-width: 750px) or (max-device-width: 750px)) {
+
+    
     .main-container {
         width:90%;
     }
     .article-full {
         display: block;
+    }
+
+    .title {
+      font-size: 2.5rem;
     }
     
     .article-body {
