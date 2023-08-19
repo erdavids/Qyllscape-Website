@@ -6,7 +6,7 @@
 
 body {
     background-color: #dfbd98;
-    background-color: rgb(229, 230, 216);
+    /* background-color: rgb(229, 230, 216); */
     margin: 0;
     padding: 0;
 }
@@ -28,6 +28,24 @@ a {
     width: 100%;
     display: inline-block;
 }
+
+.second-section {
+  background-color: rgb(229, 230, 216);
+  border: 1px solid transparent;
+  /* padding: 20px;
+  border-radius: 20% 20% 0 0; */
+}
+
+.curved-spacer {
+  background-color: rgb(229, 230, 216);
+  height: 150px;
+  padding-top: 10px;
+  width: 120%;
+  margin-left: -10%;
+  /* padding: 20px; */
+  border-radius: 100% 100% 0 0;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -39,9 +57,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(67, 75, 82);
+    background-color: transparent;
     /* background-color: #5a6a75; */
   }
+
+.scrolled {
+  background-color: rgb(67, 75, 82);
+}
 
 .header-buttons {
     display: flex;
