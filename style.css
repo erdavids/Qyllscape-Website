@@ -2,6 +2,7 @@
 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -32,6 +33,9 @@ a {
 .second-section {
   background-color: rgb(229, 230, 216);
   border: 1px solid transparent;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
   /* padding: 20px;
   border-radius: 20% 20% 0 0; */
 }
@@ -39,11 +43,12 @@ a {
 .curved-spacer {
   background-color: rgb(229, 230, 216);
   height: 150px;
-  padding-top: 10px;
+  padding-top: 0px;
   width: 120%;
-  margin-left: -10%;
+  transform: translateX(-10%);
   /* padding: 20px; */
   border-radius: 100% 100% 0 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -130,7 +135,7 @@ header {
 .main-container {
     width: 85%;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 0rem;
     font-size: 1.5rem;
 }
 
@@ -225,7 +230,7 @@ a:link {
 
 /* Actual 'articles' Full {body, info} */
 .article-full {
-    margin-top: 1rem;
+    margin-top: 0rem;
     display: flex;
 }
 
