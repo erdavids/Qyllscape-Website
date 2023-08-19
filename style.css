@@ -266,10 +266,8 @@ a:link {
 @media screen and ((max-width: 750px) or (max-device-width: 750px)) {
     .main-container {
         width:90%;
-        font-size: 1rem;
     }
     .article-full {
-        margin-top: 1rem;
         display: block;
     }
     
