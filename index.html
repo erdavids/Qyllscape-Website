@@ -8,45 +8,111 @@
       target="_blank"
       href="style.css"
     />
+    <!-- <script>
+      window.addEventListener('scroll', function() {
+        var header = document.querySelector('header');
+        var scrollTop = window.scrollY;
+        if (scrollTop === 0) {
+          header.classList.remove('scrolled');
+        } else {
+          header.classList.add('scrolled');
+        }
+      });
+    </script> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const optionsColumn = document.querySelector('.options-column');
+  
+        hamburgerIcon.addEventListener('click', function() {
+          optionsColumn.classList.toggle('show');
+        });
+  
+        window.addEventListener('resize', function() {
+          // Hide options column when the screen size is larger
+          if (window.innerWidth > 750) {
+            optionsColumn.classList.remove('show');
+          }
+        });
+      });
+    </script>
   </head>
   <body>
-    <div class="main-container">
-      <h1>Qyllscape</h1>
-      <h3>Not to make writing easier, but to make it easier to sit down and write.</h3>
-      <div class="article-full">
-        <div class="article-body">
-          <div class="image-container">
-            <img
-              style="max-width: 100%; margin: auto"
-              src="images/empty-book.png"
-            />
+    <header>
+      <!-- <div class="centered-header"> -->
+      <!-- <img class="logo" src="images/header-image.png" alt="Logo"> -->
+      <div class="title">Qyllscape</div>
+      <div class="header-buttons">
+        <button class="wishlist-header-button">Wishlist on Steam</button>
+        <button class="outline-header-button">Get Notifications</button>
+      </div>
+      <div class="hamburger-icon">&#9776;</div> <!-- Hamburger icon -->
+      <div class="options-column">
+        <button class="options-button">Wishlist on Steam</button>
+        <button class="options-button">Get Notifications</button>
+      </div>
+      <!-- </div> -->
+    </header>
+    <div class="first-section">
+      <div class="main-container">
+        <div class="spacer"></div>
+        <div class="article-full">
+          <div class="article-body">
+            <div class="image-container">
+              <img
+                style="max-width: 100%; margin: auto"
+                src="images/empty-book.png"
+              />
+            </div>
           </div>
-        </div>
-        <div class="article-info">
-          <p>It's time you wrote a book.</p>
-          <div class="centered-stuff">
-            <a class="wishlist-button" href="https://store.steampowered.com/app/1473030/Qyllscape/">Wishlist Now on Steam</a>
-          </div>
-          <div class="centered-stuff">
-            <a class="wishlist-button" href="https://store.steampowered.com/app/1473030/Qyllscape/">Wishlist Now on Steam</a>
+          <div class="article-info">
+            <div class="article-inner-info">
+              <p>
+                <b>Qyllscape</b> looks like a book, because that's what you're
+                writing.
+              </p>
+              <p>
+                Reponsively customizable, intuitive to use,
+                and filled with cozy, aesthetic features that make it a joy to sit
+                down and write until all the words are on the page.
+              </p>
+              <p>Here are the things you can do now...</p>
+              <p><a href="">--> Check out the trailer</a></p>
+              <p><a href="">--> Wishlist on Steam</a></p>
+              <p><a href="">--> Get notified for the stand-alone release</a></p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="spacer"></div>
+    </div>
+    <div class="main-container">
       <img class="banner-image" src="images/banner.png" />
-      <h3>Not to make writing easier, but to make it easier to sit down and write.</h3>
-      <p>I started developing Qyllscape because I needed something different, and wanted to make something that I could customize however I wanted.</p>
-      <p>Additionally, aesthetics were important to me, and I was spending so much time in writing editors that seemed so separated from the spirit of what I wanted to create. I can't tell you how manty times I searched for "Writing software that looks like a book" and was never able to find something that satisfied me.</p>
-      <p>So, Qyllscape </p>
+      <h3>
+        Not to make writing easier, but to make it easier to sit down and write.
+      </h3>
+      <p>
+        I started developing Qyllscape because I needed something different, and
+        wanted to make something that I could customize however I wanted.
+      </p>
+      <p>
+        Additionally, aesthetics were important to me, and I was spending so
+        much time in writing editors that seemed so separated from the spirit of
+        what I wanted to create. I can't tell you how manty times I searched for
+        "Writing software that looks like a book" and was never able to find
+        something that satisfied me.
+      </p>
+      <p>So, Qyllscape</p>
       <div class="image-container">
-      <iframe
-        width="600"
-        height="320"
-        src="https://www.youtube.com/embed/dBwb76g_cwo"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+        <iframe
+          width="600"
+          height="320"
+          src="https://www.youtube.com/embed/dBwb76g_cwo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
       <h3>Release Updates</h3>
       <p>
@@ -59,36 +125,36 @@
         or wishlist using the link below.
       </p>
       <div class="image-container">
-      <iframe
-        src="https://store.steampowered.com/widget/1473030/"
-        frameborder="0"
-        width="560"
-        height="190"
-      ></iframe>
-    </div>
+        <iframe
+          src="https://store.steampowered.com/widget/1473030/"
+          frameborder="0"
+          width="560"
+          height="190"
+        ></iframe>
+      </div>
 
-    <table class="comparison-table">
-      <thead>
-        <tr>
-          <th>Features</th>
-          <th>Competitors</th>
-          <th>Qyllscape</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Helps you write a novel.</td>
-          <td>Yes</td>
-          <td>Yes</td>
-        </tr>
-        <tr>
-          <td>Looks and functions exactly like Qyllscape.</td>
-          <td>No</td>
-          <td>Yes</td>
-        </tr>
-        <!-- Add more rows for other comparisons -->
-      </tbody>
-    </table>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Features</th>
+            <th>Competitors</th>
+            <th>Qyllscape</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Helps you write a novel.</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Looks and functions exactly like Qyllscape.</td>
+            <td>No</td>
+            <td>Yes</td>
+          </tr>
+          <!-- Add more rows for other comparisons -->
+        </tbody>
+      </table>
 
       <div class="image-container">
         <img

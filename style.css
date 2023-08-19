@@ -2,17 +2,101 @@
 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
     background-color: #dfbd98;
+    background-color: rgb(229, 230, 216);
+    margin: 0;
+    padding: 0;
 }
 
 p {
     font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+    color: #ae756a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* Organization */
+.first-section {
+    background-color: #dfbd98;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid red;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(67, 75, 82);
+    /* background-color: #5a6a75; */
+  }
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+    }
+ .centered-header {
+    width: 50%;
+ }
+  .title {
+    color: #dfbd98;
+    color: white;
+    font-size: 36px;
+    margin-left: 7%;
+  }
+
+  .wishlist-header-button {
+    margin-right: 7%;
+    background-color: #ae756a;
+    /* background-color: #798e9c; */
+    border: 3px solid #ae756a;
+    color: white;
+    padding: 8px 40px;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .outline-header-button {
+    background-color: transparent;
+    border: 3px solid #ae756a;
+    color: white;
+    white-space: nowrap;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  } */
 
 .main-container {
-    width: 75%;
+    width: 85%;
     margin: auto;
     margin-top: 4rem;
     font-size: 1.5rem;
@@ -38,6 +122,10 @@ p {
 /* Divider */
 hr.solid {
     border-top: 1px solid grey;
+}
+
+.spacer {
+    height: 60px;
 }
 
 table {
@@ -105,7 +193,6 @@ a:link {
 .article-full {
     margin-top: 1rem;
     display: flex;
-    
 }
 
 .article-body {
@@ -117,6 +204,11 @@ a:link {
 .article-info {
     float: left;
     width: 50%;
+    margin: 10px;
+}
+
+.article-inner-info {
+    padding: 10px;
 }
 
 
@@ -147,11 +239,64 @@ a:link {
     text-align: center;
 }
 
+.options-column {
+    display: none; /* Hide the options column by default */
+    flex-direction: column;
+    background-color: rgb(67, 75, 82);
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    right: 7%;
+    z-index: 1;
+  }
 
+  .hamburger-icon {
+    display: none; /* Display the hamburger icon */
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 7%;
+  }
 
-@media only screen and (max-width: 600px) {
+  .options-button {
+    color: white;
+    border: none;
+    font-size: 24px;
+    margin: 15px;
+    padding: 5px;
+    background-color: transparent;
+  }
+@media only screen and (max-width: 750px) {
     .main-container {
         width:90%;
         font-size: 1rem;
     }
+    .article-full {
+        margin-top: 1rem;
+        display: block;
+    }
+    
+    .article-body {
+        /* float: left; */
+        width: 100%;
+        /* border: 1px solid teal; */
+    }
+    
+    .article-info {
+        /* float: left; */
+        width: 100%;
+        margin: 10px;
+    }
+
+    .header-buttons {
+        display: none; /* Hide the buttons by default */
+      }
+
+      .hamburger-icon {
+        display: block; /* Display the hamburger icon */
+      }
+
+
+
+      .options-column.show {
+        display: flex; /* Display the options column when the class 'show' is added */
+      }
   }
