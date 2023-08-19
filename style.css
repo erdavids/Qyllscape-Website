@@ -295,7 +295,7 @@ a:link {
 
   .hamburger-icon {
     display: none; /* Display the hamburger icon */
-    font-size: 24px;
+    font-size: 36px;
     cursor: pointer;
     margin-right: 7%;
   }
@@ -303,7 +303,6 @@ a:link {
   .options-button {
     color: white;
     border: none;
-    font-size: 24px;
     margin: 15px;
     padding: 5px;
     background-color: transparent;
