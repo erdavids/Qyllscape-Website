@@ -94,6 +94,17 @@ header {
     margin-left: 20px;
   } */
 
+  .logo-container {
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Align items vertically */
+  }
+
+  .logo {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0px; /* Add spacing between logos */
+  }
+
 .main-container {
     width: 85%;
     margin: auto;
@@ -185,7 +196,9 @@ a:link {
 
 .centered-stuff {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Actual 'articles' Full {body, info} */
