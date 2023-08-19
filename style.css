@@ -3,7 +3,7 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
@@ -22,7 +22,7 @@ p {
 a {
     text-decoration: none;
     color: #ae756a;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 24px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -115,26 +115,16 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 24px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
   }
 
-  /* .logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
-  } */
 
-  .logo-container {
-    display: flex; /* Use flexbox for positioning */
-    align-items: center; /* Align items vertically */
-  }
-
-  .logo {
-    width: 300px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 0px; /* Add spacing between logos */
+  .available-logo {
+    display: block;
+    margin: auto;
+    width: 50%;
   }
 
 .main-container {
@@ -148,6 +138,9 @@ header {
 .image-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
 
 .banner-image {
@@ -227,10 +220,9 @@ a:link {
 }
 
 .centered-stuff {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  text-align: center;
+
 }
 
 /* Actual 'articles' Full {body, info} */
