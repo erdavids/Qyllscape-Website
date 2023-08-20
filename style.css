@@ -26,6 +26,10 @@ a {
     font-weight: bold;
 }
 
+a:visited {
+  color: #ae756a;
+}
+
 /* Organization */
 .first-section {
     background-color: #dfbd98;
