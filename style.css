@@ -34,8 +34,7 @@ a {
 }
 
 .second-section {
-  background-color: rgb(229, 230, 216);
-  border: 1px solid transparent;
+  background-color: rgb(229, 230, 216);=
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -298,7 +297,6 @@ a:link {
     margin: 15px;
     padding: 5px;
     background-color: transparent;
-    border: 1px solid red;
   }
 @media screen and ((max-width: 750px) or (max-device-width: 750px)) {
 
