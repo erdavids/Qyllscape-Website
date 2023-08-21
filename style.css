@@ -121,6 +121,7 @@ header {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 15px;
   }
 
 
@@ -284,10 +285,10 @@ a:link {
     display: none; /* Hide the options column by default */
     flex-direction: column;
     background-color: rgb(67, 75, 82);
-    position: absolute;
+    position: fixed;
     top: 60px; /* Adjust the top position as needed */
     right: 7%;
-    z-index: 1;
+    z-index: 2;
   }
 
   .hamburger-icon {
@@ -297,11 +298,18 @@ a:link {
     margin-right: 7%;
   }
 
+  .options-button-link {
+    display: block;
+    text-decoration: none;
+  }
   .options-button {
     color: white;
     border: none;
-    margin: 15px;
-    padding: 5px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* padding: 5px; */
     background-color: transparent;
   }
 @media screen and ((max-width: 750px) or (max-device-width: 750px)) {
