@@ -19,15 +19,11 @@ p {
 
 
 
-a {
+a, a:visited {
     text-decoration: none;
     color: #ae756a;
     font-size: 1rem;
     font-weight: bold;
-}
-
-a:visited {
-  color: #ae756a;
 }
 
 /* Organization */
