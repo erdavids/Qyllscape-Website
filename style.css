@@ -2,7 +2,7 @@
 
 * {
   font-family: Georgia, "Times New Roman", Times, serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-size: 18px;
 }
 
@@ -45,7 +45,7 @@ p {
 }
 
 #mce-EMAIL {
-  width: 40%;
+  width: 100%;
   padding: 6px;
   background-color: rgb(229, 230, 216);
   border: 3px solid #ae756a;
@@ -56,15 +56,14 @@ p {
 }
 
 .email:focus {
-  border: 1px solid blue;
+  border: 1px solid transparent;
 }
 
 .subscribe-field{
   display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  /* margin-top: 2rem; */
+  /* padding: 10px; */
 }
 
 #mce-responses {
@@ -80,6 +79,15 @@ a:visited {
   color: #ae756a;
   font-size: 1rem;
   font-weight: bold;
+}
+
+.hook {
+  font-size: 3rem;
+  width: 66%;
+  margin: auto;
+  color: #ae756a;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Organization */
@@ -105,12 +113,12 @@ a:visited {
   background-color: rgb(229, 230, 216);
   height: 150px;
   padding-top: 0px;
-  width: 120%;
-  transform: translateX(-10%);
+  width: 100%;
+  /* transform: translateX(-10%); */
   /* padding: 20px; */
   border-radius: 100% 100% 0 0;
   overflow-x: hidden;
-  border: 1px solid rgb(229, 230, 216);
+  /* border: 1px solid rgb(229, 230, 216); */
 }
 
 header {
@@ -120,22 +128,26 @@ header {
   width: 100%;
   background-color: #333;
   color: #fff;
-  padding: 2% 2% 2% 1%;
+  /* padding: 2% 2% 2% 1%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  opacity: .5;
   z-index: 4;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   /* background-color: #5a6a75; */
 }
 
 .scrolled {
   background-color: rgb(67, 75, 82);
+  opacity: 1.0;
 }
 
 .header-buttons {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  width: 40%;
   margin-right: 7%;
 }
 .centered-header {
@@ -164,19 +176,39 @@ header {
   border-radius: 5px;
 }
 
-.outline-header-button {
-  background-color: transparent;
+.wishlist-body-button {
+  background-color: #ae756a;
   border: 3px solid #ae756a;
   color: white;
   white-space: nowrap;
-  padding: 8px 40px;
+  /* padding: 8px 40px; */
+  height: 3rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 5px;
-  margin-left: 15px;
+  border-radius: 6px;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.outline-body-button {
+  background-color: transparent;
+  border: 3px solid #ae756a;
+  color: #ae756a;
+  white-space: nowrap;
+  /* padding: 8px 40px; */
+  height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
 }
 
 .available-logo {
@@ -366,8 +398,9 @@ table {
 /* @media screen and ((max-width: 750px) or (max-device-width: 750px)) { */
   @media ((max-width: 750px) or (max-device-width: 750px)) {
   .main-container {
-    width: 95%;
+    width: 90%;
   }
+
   .article-full {
     display: block;
   }
@@ -383,24 +416,19 @@ table {
   }
 
   #mc-embedded-subscribe {
-    background-color: #ae756a;
-    float: left;
-    border: 3px solid #ae756a;
-    border-radius: 0px 5px 5px 0px;
-    padding: 6px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: white;
-    font-size: 2rem;
+    /* padding: 6px; */
+    width: 30%;
+    font-size: 1rem;
   }
   
   #mce-EMAIL {
-    width: 40%;
-    padding: 6px;
+    width: 100%;
+    /* padding: 6px; */
     background-color: rgb(229, 230, 216);
     border: 3px solid #ae756a;
     border-radius: 5px 0px 0px 5px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-size: 1rem;
     color: black;
   }
 
@@ -410,9 +438,6 @@ table {
     margin: 10px;
   }
 
-  .header-buttons {
-    display: none; /* Hide the buttons by default */
-  }
 
   .hamburger-icon {
     display: block; /* Display the hamburger icon */
@@ -420,5 +445,22 @@ table {
 
   .options-column.show {
     display: flex; /* Display the options column when the class 'show' is added */
+  }
+
+  .outline-body-button {
+    font-size: 2rem;
+    border-radius: 5px;
+    height: 4rem;
+    width: 50%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  .wishlist-body-button {
+    font-size: 2rem;
+    height: 4rem;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
   }
 }
