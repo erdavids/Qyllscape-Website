@@ -83,11 +83,11 @@ a:visited {
 
 .hook {
   font-size: 3rem;
-  width: 66%;
+  width: 40%;
   margin: auto;
   color: #ae756a;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 /* Organization */
@@ -430,6 +430,15 @@ table {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1rem;
     color: black;
+  }
+
+  .hook {
+    font-size: 3rem;
+    width: 66%;
+    margin: auto;
+    color: #ae756a;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .article-info {
