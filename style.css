@@ -521,4 +521,14 @@ table {
     width: 50%;
     cursor: pointer;
   }
+  .article-body {
+    width: 200%;
+  }
+  
+  .hookey {
+    width: 90%;
+  }
+  .image-container {
+    position: absolute;
+  }
 }
