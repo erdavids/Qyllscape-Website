@@ -460,6 +460,11 @@ table {
     font-size: 2.5rem;
   }
 
+
+  p {
+    font-size: 1.8rem;
+  }
+
   .article-body {
     /* float: left; */
     width: 100%;
@@ -484,7 +489,7 @@ table {
   }
 
   .hook {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -515,16 +520,19 @@ table {
   }
 
   .wishlist-body-button {
-    font-size: 1rem;
-    height: 2.5rem;
+    font-size: 2rem;
+    height:4rem;
     border-radius: 5px;
-    width: 50%;
+    width: 60%;
     cursor: pointer;
   }
   .article-body {
     width: 200%;
   }
-  
+  .small-hook {
+    width: 100%;
+    margin-left: 0rem;
+  }
   .hookey {
     width: 90%;
   }
