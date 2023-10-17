@@ -89,8 +89,8 @@ a:visited {
 }
 
 .small-hook {
-  width: 70%;
-  margin-left: 1rem;
+  width: 90%;
+  margin: auto;
 }
 
 .embed-responsive {
@@ -267,7 +267,7 @@ header {
   cursor: pointer;
   border-radius: 6px;
   margin-top: 1rem;
-  width: 30%;
+  width: 100%;
   margin-left: 1rem;
 }
 
@@ -330,7 +330,7 @@ hr.solid {
 }
 
 .spacer {
-  height: 60px;
+  height: 10px;
 }
 
 table {
@@ -435,6 +435,8 @@ table {
 .options-button-link {
   display: block;
   text-decoration: none;
+  width: 40%;
+  margin: auto;
 }
 .options-button {
   color: white;
@@ -462,7 +464,7 @@ table {
 
 
   p {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   .article-body {
@@ -522,8 +524,8 @@ table {
   .wishlist-body-button {
     font-size: 2rem;
     height:4rem;
-    border-radius: 5px;
-    width: 60%;
+    border-radius: 8px;
+    width: 100%;
     cursor: pointer;
   }
   .article-body {
@@ -536,7 +538,18 @@ table {
   .hookey {
     width: 90%;
   }
+
+  .hook {
+    font-size: 4rem;
+  }
   .image-container {
     position: absolute;
+  }
+
+  .options-button-link {
+    display: block;
+    text-decoration: none;
+    width: 60%;
+    margin: auto;
   }
 }
