@@ -82,7 +82,12 @@ a:visited {
   font-weight: bold;
 }
 
-
+.other-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .embed-responsive {
   margin-top: 6rem;
   position: relative;
@@ -91,40 +96,22 @@ a:visited {
   padding: 0;
   overflow: hidden;
 }
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object {
+.container-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 0;
   bottom: 0;
-  height: 80%;
-  width: 80%;
-  border: 0;
-}
-.embed-responsive.embed-responsive-16by9 {
-  padding-bottom: 56.25%;
-}
-.embed-responsive.embed-responsive-4by3 {
-  padding-bottom: 75%;
-}
-.container:before {
-  display:block;
-  padding-top:56%; /* keeps the 16/9 ratio for the AP */
-  height:0;
-  background:red;
-  content:"\a0";
-}
-.container iframe {
-  position:absolute; /* to be ratio consistent */
-  top:-.5%;
-  left:-.5%; /* overflow eventual black bars */
-  border:0;
-  width:101%; /* grow some to avoid thinner black bars */
-  height:101%;
-  overflow:hidden; /* for html5 browsers the html attribute is depreciated */
-  background:gold;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .big-hook {
@@ -148,13 +135,19 @@ a:visited {
   font-weight: bold;
 }
 
-
+.skinny {
+  width: 70%;
+  margin: auto;
+}
 .second-section {
-  background-color: rgb(229, 230, 216);
-  padding: 0;
-  margin: 0;
-  margin-top: -2px;
-  display: inline-block;
+  background-color: #E7E3DA;
+  width: 100%;
+  color: #ae756a;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  /* display: inline-block; */
   /* padding: 20px;
   border-radius: 20% 20% 0 0; */
 }
@@ -499,6 +492,13 @@ table {
     width: 50%;
     cursor: pointer;
     margin-bottom: 1rem;
+  }
+
+  .other-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .wishlist-body-button {
