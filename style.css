@@ -8,9 +8,7 @@
 }
 
 body {
-  background-color: #dfbd98;
-  /* background-color: #ae756a; */
-  background-color: #e4dece;
+  background-color: #d4cdbc;
   /* background-color: rgb(229, 230, 216); */
   margin: 0;
   padding: 0;
@@ -84,14 +82,6 @@ a:visited {
   font-weight: bold;
 }
 
-.big-hook {
-  margin-top: 8rem;
-}
-
-.small-hook {
-  width: 90%;
-  margin: auto;
-}
 
 .embed-responsive {
   margin-top: 6rem;
@@ -137,39 +127,27 @@ a:visited {
   background:gold;
 }
 
-.hook {
-  font-size: 4rem;
-  color: #ae756a;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
-
-.hook-2 {
-  font-size: 3.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.hook-3 {
-  font-size: 3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.hookey {
-  color: #ae756a;
-  font-weight: bold;
-  width: 90%;
+.big-hook {
+  width: 70%;
   margin: auto;
+  color: #ae756a;
 }
 
-/* Organization */
-.first-section {
-  background-color: #303f4f;
-  color: rgb(209, 208, 208);
-  width: 100%;
-  display: inline-block;
+.hook {
+  font-size: 3rem;
+  color: #ae756a;
+  text-align: center;
 }
+.hook-2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.small-hook {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 
 .second-section {
   background-color: rgb(229, 230, 216);
@@ -266,9 +244,7 @@ header {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 6px;
-  margin-top: 1rem;
   width: 100%;
-  margin-left: 1rem;
 }
 
 .outline-body-button {
@@ -308,10 +284,9 @@ header {
 
 /* Info Images Specifically */
 .image-container {
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  max-height: 100%;
+  margin: auto;
+  margin-top: 4rem;
+  width: 70%;
 }
 
 .banner-image {
@@ -435,7 +410,7 @@ table {
 .options-button-link {
   display: block;
   text-decoration: none;
-  width: 40%;
+  width: 20%;
   margin: auto;
 }
 .options-button {
@@ -462,11 +437,6 @@ table {
     font-size: 2.5rem;
   }
 
-
-  p {
-    font-size: 1rem;
-  }
-
   .article-body {
     /* float: left; */
     width: 100%;
@@ -491,6 +461,10 @@ table {
   }
 
   .hook {
+    font-size: 4rem;
+    margin-top: 1.5rem;
+  }
+  .hook-2 {
     font-size: 3rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -531,20 +505,10 @@ table {
   .article-body {
     width: 200%;
   }
-  .small-hook {
-    width: 100%;
-    margin-left: 0rem;
-  }
   .hookey {
-    width: 90%;
+    width: 100%;
   }
 
-  .hook {
-    font-size: 4rem;
-  }
-  .image-container {
-    position: absolute;
-  }
 
   .options-button-link {
     display: block;
