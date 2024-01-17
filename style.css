@@ -140,11 +140,11 @@ a:visited {
   margin: auto;
 }
 .second-section {
-  background-color: #E7E3DA;
-  width: 100%;
+  /* background-color: #E7E3DA; */
+  width: 90%;
   color: #ae756a;
-  padding: 1rem;
-  text-align: center;
+  padding: rem;
+  text-align: left;
   align-items: center;
   margin: auto;
   /* display: inline-block; */
@@ -156,6 +156,10 @@ a:visited {
   color: white;
   background-color: rgb(40, 56, 70);
   width: 100%;
+  padding: rem;
+  text-align: left;
+  align-items: center;
+  margin: auto;
 }
 
 .curved-spacer {
@@ -299,7 +303,7 @@ hr.solid {
 }
 
 .spacer {
-  height: 10px;
+  height: 80px;
 }
 
 table {
