@@ -200,8 +200,8 @@ header {
 
 .header-buttons {
   /* display: flex; */
-  width: 40%;
-  margin-right: 7%;
+  margin-right: 6%;
+  /* text-align: left; */
 }
 .centered-header {
   width: 50%;
@@ -214,19 +214,19 @@ header {
 }
 
 .wishlist-header-button {
-  margin-right: 7%;
   background-color: #ae756a;
   /* background-color: #798e9c; */
   border: 3px solid #ae756a;
   color: white;
   padding: 8px 40px;
   white-space: nowrap;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
+  /* margin: auto; */
 }
 
 .wishlist-body-button {
