@@ -120,6 +120,16 @@ a:visited {
   color: #ae756a;
 }
 
+.help-hook {
+  font-size: 3rem;
+  color: #ae756a;
+}
+
+.feature-header {
+  font-size: 1.3rem;
+  color: #ae756a
+}
+
 .hook {
   font-size: 3rem;
   color: #ae756a;
@@ -285,6 +295,12 @@ header {
   margin: auto;
   margin-top: 4rem;
   width: 70%;
+}
+
+.help-section {
+  margin: auto;
+  margin-top: 4rem;
+  width: 70%
 }
 
 .banner-image {

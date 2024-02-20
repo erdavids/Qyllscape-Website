@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollTop = window.scrollY;
+        if (scrollTop === 0) {
+          header.classList.remove("scrolled");
+        } else {
+          header.classList.add("scrolled");
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerIcon = document.querySelector(".hamburger-icon");
+        const optionsColumn = document.querySelector(".options-column");
+
+        hamburgerIcon.addEventListener("click", function () {
+          optionsColumn.classList.toggle("show");
+        });
+
+        window.addEventListener("resize", function () {
+          // Hide options column when the screen size is larger
+          if (window.innerWidth > 750) {
+            optionsColumn.classList.remove("show");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- <div class="centered-header"> -->
+      <!-- <img class="logo" src="images/header-image.png" alt="Logo"> -->
+      <div class="title">Qyllscape</div>
+      <div class="header-buttons">
+        <!-- <div id="mc_embed_shell">
+          <div id="mc_embed_signup">
+            <form
+              action="https://gmail.us8.list-manage.com/subscribe/post?u=f9023c78c8f74321ab70457a2&amp;id=6c30f4f280&amp;f_id=007407e0f0"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+            >
+              <div id="mc_embed_signup_scroll">
+                <div class="subscribe-field">
+                  <input
+                    placeholder="writer@email.com"
+                    type="email"
+                    name="EMAIL"
+                    class="email"
+                    id="mce-EMAIL"
+                    value=""
+                  />
+                  <input
+                    type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="button"
+                    value="Sign up"
+                  />
+                </div>
+                <div
+                  aria-hidden="true"
+                  style="position: absolute; left: -5000px"
+                >
+                  <input
+                    type="text"
+                    name="b_f9023c78c8f74321ab70457a2_6c30f4f280"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <div id="mce-responses" class="clear foot">
+                    <div
+                      class="response"
+                      id="mce-error-response"
+                      style="display: none"
+                    ></div>
+                    <div
+                      class="response"
+                      id="mce-success-response"
+                      style="display: none"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <script
+            type="text/javascript"
+            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+          ></script>
+          <script type="text/javascript">
+            (function ($) {
+              window.fnames = new Array();
+              window.ftypes = new Array();
+              fnames[0] = "EMAIL";
+              ftypes[0] = "email";
+            })(jQuery);
+            var $mcj = jQuery.noConflict(true);
+          </script>
+        </div> -->
+        <!-- <a
+          href="https://store.steampowered.com/app/1473030/Qyllscape/"
+          class="options-button-link"
+          ><button class="wishlist-header-button">Wishlist on Steam</button></a
+        > -->
+        <a
+        target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeLny5_KyHdZRVjPnR0SH-WowXqGCzb4eV0Ff6741EM4WeRGQ/viewform?usp=sf_link"
+        ><button class="wishlist-header-button">
+          Get notified on release
+        </button></a
+      >
+        <!-- <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeLny5_KyHdZRVjPnR0SH-WowXqGCzb4eV0Ff6741EM4WeRGQ/viewform?usp=sf_link">Get notified on release</a> -->
+      </div>
+      <!-- </div> -->
+    </header>
+    <div class="help-section">
+        <p class="help-hook">Support</p>
+        <p>While Qyllscape is designed to be simple, these manuals attempt to help answer any questions that might come up as well as highlight features that users may overlook. Furthermore, there is information about the file system to help users understand how their writing will be organized and saved.</p>
+        <p>If you encounter questions related to Qyllscape that are not addressed by the manual, or find something that would be considered an issue, please reach out to the following email:</p>
+        <p>qyllscape [at] gmail.com</p>
+        <p>Please keep in mind that Qyllscape development will continue after release, and features can be added, changed, or improved. Please check out the <a href="./updates.html">Updates Page</a> for more information about ongoing development.</p>
+        <p></p>
+        <a href="./PDFs/qyllscape-manual-1.0.0.pdf" download="Qyllscape-Manual-1.0.0">Current Version Manual</a>
+        <p>Past Versions</p>
+        <a href="./PDFs/qyllscape-manual-1.0.0.pdf" download="Qyllscape-Manual-1.0.0">Qyllscape 1.0.0</a>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollTop = window.scrollY;
+        if (scrollTop === 0) {
+          header.classList.remove("scrolled");
+        } else {
+          header.classList.add("scrolled");
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerIcon = document.querySelector(".hamburger-icon");
+        const optionsColumn = document.querySelector(".options-column");
+
+        hamburgerIcon.addEventListener("click", function () {
+          optionsColumn.classList.toggle("show");
+        });
+
+        window.addEventListener("resize", function () {
+          // Hide options column when the screen size is larger
+          if (window.innerWidth > 750) {
+            optionsColumn.classList.remove("show");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- <div class="centered-header"> -->
+      <!-- <img class="logo" src="images/header-image.png" alt="Logo"> -->
+      <div class="title">Qyllscape</div>
+      <div class="header-buttons">
+        <a
+        target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeLny5_KyHdZRVjPnR0SH-WowXqGCzb4eV0Ff6741EM4WeRGQ/viewform?usp=sf_link"
+        ><button class="wishlist-header-button">
+          Get notified on release
+        </button></a
+      >
+        <!-- <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeLny5_KyHdZRVjPnR0SH-WowXqGCzb4eV0Ff6741EM4WeRGQ/viewform?usp=sf_link">Get notified on release</a> -->
+      </div>
+      <!-- </div> -->
+    </header>
+    <div class="help-section">
+        <p class="help-hook">Updates</p>
+        <p>This page will be attempt to keep users up to date on any updates related to fixing issues or adding/improving features. Manuals for each version can be found by clicking the version headers or visiting the <a href="./support.html">Support Page</a>.</p>
+        <a class="feature-header">Qyllscape 1.0.0 - Feb. 26, 2024</a>
+        <p>- Initial release of Qyllscape containing first iteration of all base features.</p>
+    </div>
+
+  </body>
+</html>
