@@ -554,6 +554,16 @@ table {
     width: 100%;
     cursor: pointer;
   }
+
+  .wishlist-body-button-hollow {
+    font-size: 2rem;
+    height:4rem;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+
   .article-body {
     width: 200%;
   }
