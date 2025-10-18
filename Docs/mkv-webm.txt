@@ -1,0 +1,17 @@
+ffmpeg -i prev-video.mkv -c:v libvpx-vp9 -crf 15 -b:v 0 -an output-3.webm
+
+Optional width scale: ffmpeg -i prev-video.mkv -vf "scale=800:-1" -c:v libvpx-vp9 -crf 15 -b:v 0 -an output-3.webm
+
+
+Trim to time: ffmpeg -t 5 -i prev-video.mkv -c:v libvpx-vp9 -crf 15 -b:v 0 -an output-3.webm
+
+
+check meta data ffprobe output-3.webm    # quick metadata
+ls -lh output-3.webm      # file size
+
+
+html code: <video autoplay loop muted playsinline width="800" style="display:block;">
+  <source src="output-3.webm" type="video/webm">
+  <!-- fallback for very old browsers: -->
+  <img src="output-3.gif" alt="Fallback animation">
+</video>
