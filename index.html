@@ -3,44 +3,26 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script>
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      var scrollTop = window.scrollY;
-      if (scrollTop === 0) {
-        header.classList.remove("scrolled");
-      } else {
-        header.classList.add("scrolled");
-      }
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const hamburgerIcon = document.querySelector(".hamburger-icon");
-      const optionsColumn = document.querySelector(".options-column");
-
-      hamburgerIcon.addEventListener("click", function () {
-        optionsColumn.classList.toggle("show");
-      });
-
-      window.addEventListener("resize", function () {
-        // Hide options column when the screen size is larger
-        if (window.innerWidth > 750) {
-          optionsColumn.classList.remove("show");
-        }
-      });
-    });
-  </script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English+SC&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="title">Qyllscape</div>
     <div class="header-buttons">
-      <a><button class="wishlist-header-button-outlined">
-          Write Online
+      <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
+          onclick="setLoadingText()">
+          Start Writing
         </button></a>
-      <a><button class="wishlist-header-button">Buy Now</button></a>
+      <a><button class="wishlist-header-button-filled">Download</button></a>
+      <!-- <a href="https://payhip.com/b/SdnWh" class="payhip-buy-button" data-theme="blue" data-product="SdnWh">Buy Now</a>
+      <a><button class="wishlist-header-button">Support</button></a> -->
       <!-- <a
         target="_blank"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeLny5_KyHdZRVjPnR0SH-WowXqGCzb4eV0Ff6741EM4WeRGQ/viewform?usp=sf_link"
@@ -50,57 +32,150 @@
 
     </div>
   </header>
+  <br>
+  <br>
+  <br>
 
+  <section class="hero">
+
+    <div class="hero-left">
+
+      <h1 class="story-is-a-book">
+        Your story is<br>
+        already a book.
+      </h1>
+
+      <!-- <div class="hero-buttons">
+            <a class="button button-outline" href="#">Open a Book</a>
+            <a class="button button-solid" href="#">Download</a>
+        </div> -->
+
+    </div>
+
+
+    <div class="hero-right">
+
+      <p>
+        Writing flows from one page to the next, and suddenly what you're typing feels hand-written.
+      </p>
+
+      <p>
+        Qyllscape is a simple, cozy writing tool that makes it easier to sit down and put key to paper.
+      </p>
+
+      <span style="font-style: italic">
+        Write online for free. No account. No subscription.
+      </span>
+
+      <span style="font-style: italic">
+        Download the desktop edition for a one time purchase of $10.
+      </span>
+
+    </div>
+
+  </section>
+
+    <div class="hero-buttons">
+            <a class="button button-outline" href="#">Open a Book</a>
+            <a class="button button-solid" href="#">Download</a>
+        </div>
+
+    <div id="theme-button" class="color-palette" >
+      <div class="color-palette-1"></div>
+      <div class="color-palette-2"></div>
+      <div class="color-palette-3"></div>
+      <div class="color-palette-4"></div>
+    </div>
+
+  <button id="theme-button">
+    Next Theme
+  </button>
+
+  <img id="theme-preview" class="theme-preview-image" src="new_images/qyllscape-book.png" alt="">
+
+  <section class="theme-preview">
+
+    <div class="theme-card">
+
+      <!-- placeholder -->
+      <div class="theme-image"></div>
+
+      <p>Minimalist</p>
+
+    </div>
+
+    <small>Everything is customizable</small>
+
+  </section>
+
+  <div style="height: 70vh; align-items: center;" class="twelve-container">
+    <div class="five-column-image">
+      <div class="grid-image">
+        <img style="width:100%;" class="image-shadow" src="new_images/Qyllscape-Screenshot (2).png" />
+      </div>
+    </div>
+    <div style="outline: 1px solid red; box-sizing: border-box; padding: 4rem; text-align: center;"
+      class="five-column-text">
+      <!-- <div class="qyllscape-intro cormorant-garamond-bold">
+        Qyllscape
+      </div> -->
+      <div style="font-size: 2.5rem; text-align: center;" class="cormorant-garamond-bold">
+        Stories should feel hand-written.
+      </div>
+      <div class="qyllscape-description cormorant-garamond-bold">
+        <p>Qyllscape is a minimalist, customizable writing tool with cozy candlelight effects.</p>
+      </div>
+    </div>
+  </div>
   <div class="big-hook">
     <p class="small-hook">A minimalist, customizable writing tool with cozy candlelight effects.</p>
 
-    <img style="width:100%" class="image-shadow" src="images/{3714}.png" />
-    
-        <!-- <p class="small-hook">Not making writing easier, making it easier to start.</p> -->
+    <img style="max-width: 1200px; width:100%" class="image-shadow" src="new_images/Qyllscape-Screenshot (2).png" />
+    <!-- <img style="max-width: 1600px; width:100%" class="image-shadow" src="images/{6716}.png" /> -->
+
+    <!-- <p class="small-hook">Not making writing easier, making it easier to start.</p> -->
 
     <div style="margin-top: 2rem;text-align: center">
-      <button class="body-button-hollow">Write online for free</button>
+      <a href="/editor.html"><button href="/editor.html" id="body-editor-button" onClick="setLoadingText()"
+          class="body-button-hollow">Write online for free</button></a>
       <button class="body-button">Buy for Windows / MacOS</button>
     </div>
   </div>
 
 
-  <div class="primary-content">
-    <p>qyllscape?</p>
-
-
-
+  <div style="margin-top: 2rem;" class="primary-content">
     <div class="grid-container">
       <div class="grid-info">
-        <h1 class="info-title">It's your book.</h1>
-        <p>How much can I do?</p>
-        <p>Will you tell me the truth?</p>
-        <p>And if I go too long, will you really tell me the truth and tell me to leave?</p>
+        <h1 class="info-title">It's your book, not an online document.</h1>
+        <p>Qyllscape started because there's something special about seeing the words you've written on a page, as soon
+          as possible.</p>
+        <p>To be clear, Qyllscape is not a replacement for all other tools.</p>
+        <p>It is simply meant to fit into your environment, give you some fun options, allow you to visualize your
+          progress, and make it easier to sit down and write when it feels most difficult.</p>
       </div>
       <div class="grid-image">
-        <img style="width:100%" class="image-shadow" src="images/basic-lighting.png" />
+        <img style="width:100%;" class="image-shadow" src="images/{6321}.png" />
       </div>
     </div>
 
-        <div class="grid-container">
-      <div class="grid-info">
-        <h1 class="info-title">It's your book.</h1>
-        <p>How much can I do?</p>
-        <p>Will you tell me the truth?</p>
-        <p>And if I go too long, will you really tell me the truth and tell me to leave?</p>
+
+    <div style="margin-top: 2rem;" class="triple-grid">
+      <div class="column-1">
+        <img style="width:100%;" class="smaller-image-shadow" src="images/basic-lighting.png" />
+        <img style="width:100%;" class="smaller-image-shadow" src="images/{4957}.png" />
       </div>
-      <div class="grid-image">
-    <video autoplay loop muted playsinline loading="lazy" width="100%">
-  <source src="images/output-3.webm" type="video/webm">
-  Your browser does not support the WebM format.
-</video>
+      <div class="column-2">
+        <img style="width:100%;" class="smaller-image-shadow" src="images/{6321}.png" />
+      </div>
+      <div class="column-3">
+        <img style=" width:100%;" class="smaller-image-shadow" src="images/basic-lighting.png" />
       </div>
     </div>
 
-    <video autoplay loop muted playsinline>
+    <!-- <video autoplay loop muted playsinline>
   <source src="images/output-3.webm" type="video/webm">
   Your browser does not support the WebM format.
-</video>
+</video> -->
 
     <!-- <div class="image-container">
     <img style="width:100%;" src="images/new-background.png" />
@@ -197,21 +272,19 @@
         full-time job when I have time left over. I say all that to really emphasize how much I appreciate your support,
         even if you're just reading this page!
       </p>
-      <p>I am proud of the fact that Qyllscape is available, but there is plenty more to do before the project reaches
-        its full potential.</p>
       <p>
         Message me at
         <a href="https://www.instagram.com/ericdavidsonwrites/">@ericdavidsonwrites</a>
         on Instagram if you have any questions or thoughts about Qyllscape. ❤
       </p>
-      <p>
-        The non-Steam version is available, but I'll leave the following form open for now if anyone wants to get on the
-        list for big future updates! Use this <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeLny5_KyHdZRVjPnR0SH-WowXqGCzb4eV0Ff6741EM4WeRGQ/viewform?usp=sf_link">Form
-          Link</a>, and also I promise I'll never send any spam, because I don't know how!
-      </p>
     </div>
     <div class="spacer"></div>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage">
   </div>
 </body>
 
