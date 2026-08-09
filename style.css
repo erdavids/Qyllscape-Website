@@ -1,8 +1,4 @@
 * {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* overflow-x: hidden; */
   font-size: 24px;
@@ -12,7 +8,7 @@
 :root {
   /* COLORS */
 
-  --bg: #f5f2e9;
+  --bg: #fbf7ef;
   --text: #1f1f1f;
 
   --primary: #6d9993;
@@ -50,6 +46,7 @@
   --edge-margin: 2rem;
 }
 
+
 .theme-minimal {
   --bg: #efecdd;
   --text: #202020;
@@ -81,12 +78,17 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-
-  font-family: var(--font-body);
-
+    font-family: "EB Garamond", serif;
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
+}
+
+button, 
+input, 
+select, 
+textarea {
+  font-family: inherit;
 }
 
 /* Anything that changes color should transition */
@@ -311,12 +313,7 @@ h1 {
   font-style: normal;
 }
 
-.cormorant-garamond-bold {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 .twelve-container {
   display: grid;
@@ -639,11 +636,6 @@ hr.solid {
   height: 80px;
 }
 
-table {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
 .centered-stuff {
   width: 100%;
@@ -868,17 +860,6 @@ table {
     /* padding: 6px; */
     width: 30%;
     font-size: 1rem;
-  }
-
-  #mce-EMAIL {
-    width: 100%;
-    /* padding: 6px; */
-    background-color: rgb(229, 230, 216);
-    border: 3px solid #ae756a;
-    border-radius: 5px 0px 0px 5px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 1rem;
-    color: black;
   }
 
   .hook {
