@@ -1,389 +1,161 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js" defer></script>
-    <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap"
-        rel="stylesheet">
-  </head>
 
-  <body>
-    <header>
-      <div class="title">Qyllscape</div>
-      <div class="header-buttons">
-        <a href="/editor.html"
-          ><button
-            id="header-editor-button"
-            class="wishlist-header-button-outlined"
-            onclick="setLoadingText()"
-          >
-            Start Writing
-          </button></a
-        >
-        <a><button class="wishlist-header-button-filled">Download</button></a>
-        <!-- <a href="https://payhip.com/b/SdnWh" class="payhip-buy-button" data-theme="blue" data-product="SdnWh">Buy Now</a>
+<head>
+  <meta name="robots" content="noai, noimageai">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js" defer></script>
+  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="title">Qyllscape</div>
+    <div class="header-buttons">
+      <!-- <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
+          onclick="setLoadingText()">
+          * Human hands, not AI
+        </button></a> -->
+      <!-- <a><button class="wishlist-header-button-filled">Download</button></a> -->
+      <!-- <a href="https://payhip.com/b/SdnWh" class="payhip-buy-button" data-theme="blue" data-product="SdnWh">Buy Now</a>
       <a><button class="wishlist-header-button">Support</button></a> -->
-        <!-- <a
+      <!-- <a
         target="_blank"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeLny5_KyHdZRVjPnR0SH-WowXqGCzb4eV0Ff6741EM4WeRGQ/viewform?usp=sf_link"
         ><button class="wishlist-header-button">
           Notify me of sales and updates
         </button></a -->
-      </div>
-    </header>
-    <br />
-    <br />
-    <br />
+    </div>
+  </header>
 
+  <div style="width: 90%; margin: auto">
+    <h1 class="story-is-a-book">
+      Stories should feel hand-written.
+    </h1>
     <section class="hero">
       <div class="hero-left">
-        <h1 class="story-is-a-book">
-          Your story is<br />
-          already a book.
-        </h1>
+        <!-- <h1 class="story-is-a-book">
+        Stories can feel<br />hand-written.
+      </h1> -->
+        <div style=" margin: auto; text-align: center;">
+          <img id="theme-preview" class="theme-preview-image" src="new_images/example.png" alt="" />
+        </div>
 
-        <!-- <div class="hero-buttons">
-            <a class="button button-outline" href="#">Open a Book</a>
-            <a class="button button-solid" href="#">Download</a>
-        </div> -->
+        <!-- <video autoplay loop muted playsinline>
+        <source src="new_images/pullups.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
       </div>
 
       <div class="hero-right">
         <p>
-          Writing flows from one page to the next, and suddenly what you're
-          typing feels hand-written.
+          Qyllscape is a simple, cozy writing editor. It is not meant to replace all other tools, it is just meant to make it
+          easier to sit down and write.
         </p>
-
         <p>
-          Qyllscape is a simple, cozy writing tool that makes it easier to sit
-          down and put key to paper.
+          Keep writing and eventually the words will flow to the next page.
         </p>
+        <p>
+          Soon you will have a book.
+        </p>
+        <br />
+        <br />
+        <p>
+          Write online for free. No account, no email, no subscription.
+        </p>
+        <p>
+          Download the desktop app for a one time purchase of $10.
 
-        <span style="font-style: italic">
-          Write online for free. No account. No subscription.
-        </span>
-
-        <span style="font-style: italic">
-          Download the desktop edition for a one time purchase of $10.
-        </span>
+        </p>
       </div>
     </section>
+  </div>
 
-    <div class="hero-buttons">
-      <a class="button button-outline" href="#">Open a Book</a>
-      <a class="button button-solid" href="#">Download</a>
-    </div>
+  <div class="hero-buttons">
+    <a class="button button-outline" href="#">Write Online</a>
+    <a class="button button-solid" href="#">Download</a>
+  </div>
 
-<svg class="svg-parent" width="393" height="307" viewBox="0 0 393 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="svg-rect-3" x="0.612054" y="89.6051" width="345" height="224" transform="rotate(-14.9485 0.612054 89.6051)"/>
-<rect x="0.612054" y="89.6051" width="345" height="224" transform="rotate(-14.9485 0.612054 89.6051)"/>
-<rect x="0.612054" y="89.6051" width="345" height="224" transform="rotate(-14.9485 0.612054 89.6051)"/>
-<path class="svg-rect-2" d="M275.744 24.9464L282.595 23.1172C282.595 23.1172 283.255 24.8448 284.343 25.0823C285.019 25.2298 285.743 25.0428 286.398 24.5336C287.348 23.7958 287.391 21.8369 287.391 21.8369L292.415 20.4955C292.415 20.4955 293.494 22.2916 294.619 22.3386C295.173 22.3617 295.531 22.2829 295.99 21.9728C296.881 21.3701 296.754 19.3371 296.754 19.3371L300.864 18.2396L303.148 17.6299C303.148 17.6299 304.323 19.4122 305.353 19.473C305.813 19.5002 306.105 19.4156 306.494 19.1682C307.383 18.6035 307.487 16.4715 307.487 16.4715L313.424 14.8863C313.424 14.8863 314.36 16.5555 315.629 16.7294C316.451 16.842 317.028 16.6882 317.684 16.1806C318.698 15.3972 318.677 13.484 318.677 13.484L325.984 11.5329L327.621 17.6616C327.621 17.6616 324.987 18.6737 324.848 20.1041C324.777 20.8352 324.934 21.303 325.333 21.92C326.161 23.2037 329.075 23.1093 329.075 23.1093L330.105 26.9682C330.105 26.9682 327.451 28.0172 327.333 29.4107C327.278 30.0511 327.419 30.4528 327.757 30.9996C328.547 32.2789 331.469 32.0754 331.469 32.0754L332.772 36.9557C332.772 36.9557 329.118 37.9312 329.845 40.6551C330.573 43.3789 334.226 42.4034 334.226 42.4034L336.045 49.2131L332.905 50.0514L330.335 50.7373C330.335 50.7373 329.266 48.7973 328.07 48.6672C327.337 48.5874 326.839 48.7202 326.243 49.155C325.272 49.8637 325.311 52.0787 325.311 52.0787L320.344 53.4048C320.344 53.4048 318.707 51.167 316.88 51.6548C315.053 52.1425 315.035 54.8223 315.035 54.8223L310.924 55.9198L308.412 56.5905C308.412 56.5905 307.317 55.0538 306.268 54.9744C305.625 54.9256 305.204 55.0379 304.67 55.4011C303.8 55.9928 303.617 57.8708 303.617 57.8708L298.364 59.2732C298.364 59.2732 297.44 57.7098 296.449 57.5961C295.807 57.5224 295.37 57.6393 294.85 58.0229C294.048 58.6155 294.025 60.4316 294.025 60.4316L285.804 62.6265L284.547 57.9165C284.547 57.9165 286.862 56.8283 287.076 55.4782C287.22 54.5712 287.01 53.9513 286.47 53.2083C285.617 52.0336 282.956 51.958 282.956 51.958L282.032 48.4965C282.032 48.4965 284.248 46.974 284.41 45.4907C284.519 44.4866 284.325 43.8195 283.743 42.9938C282.864 41.7453 280.146 41.4314 280.146 41.4314L279.138 37.6577C279.138 37.6577 281.697 36.2451 281.151 34.2022C280.666 32.3863 277.744 32.437 277.744 32.437L275.744 24.9464Z"/>
-<rect class="svg-rect-1" x="282.592" y="28.2543" width="39.753" height="28.7175" transform="rotate(-14.9485 282.592 28.2543)" />
-</svg>
+    <div style="width: 50%; margin: auto">
+    <p style="text-align: center; margin: auto">
+      Qyllscape may be missing some features you find important.
+    </p>
+    <p style="text-align: center; margin: auto">Please make sure to try the online version before purchasing.</p>
+  </div>
 
-
-
-
-    <div id="theme-button" class="color-palette">
-      <div class="color-palette-1"></div>
-      <div class="color-palette-2"></div>
-      <div class="color-palette-3"></div>
-      <div class="color-palette-4"></div>
-    </div>
-
-    <button id="theme-button">Next Theme</button>
-
-    <img
-      id="theme-preview"
-      class="theme-preview-image"
-      src="new_images/qyllscape-book.png"
-      alt=""
-    />
-
-    <section class="theme-preview">
-      <div class="theme-card">
-        <!-- placeholder -->
-        <div class="theme-image"></div>
-
-        <p>Minimalist</p>
+  <div style="width: 90%; margin: auto">
+    <div style="margin-top: 2rem" class="three-column">
+      <div style="border: 1px solid red;">
+        <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
+        <p style="font-style: italic">Things always look better by candlelight.</p>
+        <p>The most unique feature available in Qyllscape is the lighting effect in your editor.</p>
+        <p>Whether you are matching the flicker of the candles on your desk or just trying to see things in a new light, it will be yours to customize.</p>
       </div>
+      <div>
+        <img style="width: 100%" class="smaller-image-shadow" src="images/{6321}.png" />
+        <p style="font-style: italic">It's your book, not an online document.</p>
+        <p>Qyllscape helps you see your story for what it is. Feel the weight of the
+          story on the page or the e-book display.</p>
+      </div>
+      <div>
+        <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
+        <p style="font-style: italic">Things always look better by candlelight.</p>
+        <p>The most unique feature available in Qyllscape is the ability to customize lighting effects. </p>
+      </div>
+    </div>
+  </div>
+  <div style="width: 90%; margin: auto">
+    <div class="banner-section">
+      <p>Stories should feel hand-written... by human hands, not AI.</p>
+      <p>"I strongly feel that this is an insult to life itself." - Hayao Miyazaki, criticizing a demonstration of
+        machine-learning applied to animation.</p>
+      <p>Please don't use AI to write. It's tempting, but I would encourage you to have faith in yourself and what you
+        can accomplish. Experience what
+        it is like to take an idea, develop it, rework it, doubt it, and find confidence in it again and again.</p>
 
-      <small>Everything is customizable</small>
-    </section>
+      <p>You will be become better the more often you repeat that process, in any discipline, and the world will be
+        better for having things in that truly only you could have created.</p>
+      <p>Life is rarely perfect, but you have an opportunity to create things that.</p>
+      <p></p>
+    </div>
+  </div>
 
-    <div style="height: 70vh; align-items: center" class="twelve-container">
-      <div class="five-column-image">
-        <div class="grid-image">
-          <img
-            style="width: 100%"
-            class="image-shadow"
-            src="new_images/Qyllscape-Screenshot (2).png"
-          />
+  <div class="spacer"></div>
+  <div class="third-section">
+    <div style="width: 90%; margin: auto; text-align: left">
+      <div class="foot-columns">
+        <div class="foot-left">
+          <a href="">About Us</a>
+          <a href="">Careers</a>
+          <a href="">Support</a>
+        </div>
+        <div class="foot-center">
+          * Stories should be written by humans, not AI.
+        </div>
+        <div class="foot-right">
+          <p>Please contact with issue:</p>
+          <p>ericdavidsonwrites@gmail.com</p>
         </div>
       </div>
-      <div
-        style="
-          outline: 1px solid red;
-          box-sizing: border-box;
-          padding: 4rem;
-          text-align: center;
-        "
-        class="five-column-text"
-      >
-        <!-- <div class="qyllscape-intro cormorant-garamond-bold">
-        Qyllscape
-      </div> -->
-        <div
-          style="font-size: 2.5rem; text-align: center"
-          class="cormorant-garamond-bold"
-        >
-          Stories should feel hand-written.
-        </div>
-        <div class="qyllscape-description cormorant-garamond-bold">
-          <p>
-            Qyllscape is a minimalist, customizable writing tool with cozy
-            candlelight effects.
-          </p>
-        </div>
+      <div class="true-footer">
+        <p>@2026 Seven Wishes, LLC</p>
+        <p>|</p>
+        <p>Privacy Policy</p>
+        <p>|</p>
+        <p>Terms & Conditions</p>
       </div>
     </div>
-    <div class="big-hook">
-      <p class="small-hook">
-        A minimalist, customizable writing tool with cozy candlelight effects.
-      </p>
+  </div>
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage" />
+  </div>
+</body>
 
-      <img
-        style="max-width: 1200px; width: 100%"
-        class="image-shadow"
-        src="new_images/Qyllscape-Screenshot (2).png"
-      />
-      <!-- <img style="max-width: 1600px; width:100%" class="image-shadow" src="images/{6716}.png" /> -->
-
-      <!-- <p class="small-hook">Not making writing easier, making it easier to start.</p> -->
-
-      <div style="margin-top: 2rem; text-align: center">
-        <a href="/editor.html"
-          ><button
-            href="/editor.html"
-            id="body-editor-button"
-            onClick="setLoadingText()"
-            class="body-button-hollow"
-          >
-            Write online for free
-          </button></a
-        >
-        <button class="body-button">Buy for Windows / MacOS</button>
-      </div>
-    </div>
-
-    <div style="margin-top: 2rem" class="primary-content">
-      <div class="grid-container">
-        <div class="grid-info">
-          <h1 class="info-title">It's your book, not an online document.</h1>
-          <p>
-            Qyllscape started because there's something special about seeing the
-            words you've written on a page, as soon as possible.
-          </p>
-          <p>
-            To be clear, Qyllscape is not a replacement for all other tools.
-          </p>
-          <p>
-            It is simply meant to fit into your environment, give you some fun
-            options, allow you to visualize your progress, and make it easier to
-            sit down and write when it feels most difficult.
-          </p>
-        </div>
-        <div class="grid-image">
-          <img
-            style="width: 100%"
-            class="image-shadow"
-            src="images/{6321}.png"
-          />
-        </div>
-      </div>
-
-      <div style="margin-top: 2rem" class="triple-grid">
-        <div class="column-1">
-          <img
-            style="width: 100%"
-            class="smaller-image-shadow"
-            src="images/basic-lighting.png"
-          />
-          <img
-            style="width: 100%"
-            class="smaller-image-shadow"
-            src="images/{4957}.png"
-          />
-        </div>
-        <div class="column-2">
-          <img
-            style="width: 100%"
-            class="smaller-image-shadow"
-            src="images/{6321}.png"
-          />
-        </div>
-        <div class="column-3">
-          <img
-            style="width: 100%"
-            class="smaller-image-shadow"
-            src="images/basic-lighting.png"
-          />
-        </div>
-      </div>
-
-      <!-- <video autoplay loop muted playsinline>
-  <source src="images/output-3.webm" type="video/webm">
-  Your browser does not support the WebM format.
-</video> -->
-
-      <!-- <div class="image-container">
-    <img style="width:100%;" src="images/new-background.png" />
-  </div> -->
-
-      <!-- 
-      <div class="image-container">
-    </div>
-
-    <div class="image-container">
-      <img style="width:500px;" src="images/lighting-test.png" />
-    </div>
-
-    <div class="image-container">
-      <img style="width:100%;" src="images/writing-example.png" />
-    </div> -->
-
-      <p class="small-hook">
-        A minimalist writing editor with cozy candlelight effects.
-      </p>
-      <a
-        href="https://store.steampowered.com/app/1473030/Qyllscape/"
-        class="options-button-link"
-        ><button class="wishlist-body-button">Buy on Steam</button></a
-      >
-      <p
-        style="margin: auto; text-align: center; width: 50%; margin-top: 1.5rem"
-      >
-        Please see the notes below on platforms.
-      </p>
-    </div>
-
-    <!-- <div class="spacer"></div> -->
-    <div class="other-container">
-      <div class="container-iframe">
-        <iframe
-          class="responsive-iframe"
-          src="https://www.youtube.com/embed/yoFllxt5Gfg?si=fjZsC6iix5ExPJyJ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <div class="second-section">
-      <h1 class="small-hook">Your Environment Matters</h1>
-      <p>
-        Qyllscape started because most editors felt too harsh, and never fit
-        into the themes of my own writing environment. Over time Qyllscape
-        developed into a suite of options and tools that let you responsively
-        customize whatever is helpful, from layout and colors, to the ambient
-        candle-lighting that plays out on your editor.
-      </p>
-
-      <div class="image-container">
-        <img style="width: 100%" src="images/basic-lighting.png" />
-      </div>
-    </div>
-    <div class="spacer"></div>
-    <div class="second-section">
-      <h1 class="small-hook">The Love Of Writing</h1>
-      <p>
-        Qyllscape is a nearly minimalist tool that is not intended to replace
-        all other editors. Instead, it is intended to make it easier to sit down
-        and write during the times that it feels most difficult.
-      </p>
-      <div class="image-container">
-        <img style="width: 100%" src="images/texture-green.png" />
-      </div>
-    </div>
-    <div class="spacer"></div>
-    <div class="second-section">
-      <h1 class="small-hook">Development</h1>
-      <p>
-        There are many ways in which Qyllscape can improve, and updates to core
-        functionality such as editing, exporting/importing, and all convencience
-        tools will be released as often as possible. All users will receive
-        updates for free, and the community hub and support email allows for
-        user feedback which is always considered a priority.
-      </p>
-      <p>
-        To see information on the latest and upcoming changes, please follow the
-        link to the <a href="updates.html">Updates Page</a>. If you want to
-        submit feedback, or download any version manuals, please follow the link
-        to the <a href="support.html">Support Page</a>.
-      </p>
-    </div>
-    <p></p>
-    <div class="second-section">
-      <h1 class="small-hook">Platforms</h1>
-      <!-- <div style="margin:auto;text-align: center;">
-        <img style="width:14%;" src="images/windows.png"/>
-        <img style="width:14%;" src="images/apple.png"/>
-      </div> -->
-      <p>
-        Initial release is available on Steam for both Windows and MacOS, which
-        will give users access to cloud-saving between devices, a Qyllscape
-        community hub, and Steam achievements related to writing progress.
-      </p>
-      <p>
-        A stand-alone version for v1.0.6 will soon be available for users that
-        do not wish to use Steam, and is offered through Gumroad. It is a
-        simplified version of Qyllscape, and has not been tested as strongly as
-        the Steam version. It may also take longer for updates to be available
-        for the stand-alone version.
-      </p>
-    </div>
-
-    <div class="spacer"></div>
-    <div class="third-section">
-      <div class="spacer"></div>
-      <div class="foot-boi">
-        <h1 class="hook">A couple notes</h1>
-        <p>
-          This project is a one-person effort, and I'm currently balancing
-          Qyllscape development, editing a children's fantasy novel, marketing,
-          and my full-time job when I have time left over. I say all that to
-          really emphasize how much I appreciate your support, even if you're
-          just reading this page!
-        </p>
-        <p>
-          Message me at
-          <a href="https://www.instagram.com/ericdavidsonwrites/"
-            >@ericdavidsonwrites</a
-          >
-          on Instagram if you have any questions or thoughts about Qyllscape. ❤
-        </p>
-      </div>
-      <div class="spacer"></div>
-    </div>
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-      <span class="close-modal">&times;</span>
-      <img class="modal-content" id="modalImage" />
-    </div>
-  </body>
 </html>

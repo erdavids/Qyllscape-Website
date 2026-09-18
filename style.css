@@ -1,7 +1,7 @@
 * {
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* overflow-x: hidden; */
-  font-size: 24px;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
@@ -9,22 +9,22 @@
   /* COLORS */
 
   --bg: #fbf7ef;
-  --text: #1f1f1f;
+  --text: #4b5a57;
 
-  --primary: #6d9993;
+  --primary: #738c7a;
   --primary-hover: #5c847f;
 
-  --button-text: #62958c;
-  --button-border: #62958c;
-  --button-fill: #62958c;
+  --button-text: #738c7a;
+  --button-border: #738c7a;
+  --button-fill: #738c7a;
   --button-filled-text: #f5f2e9;
 
-  --qyllscape-title-text: #62958c;
+  --qyllscape-title-text: #4b5a57;
 
   /* Palette */
   /* Book text? */
   --color-outline: #ffffff;
-  --color-1: #000000;
+  --color-1: #2d2d2d;
   /* Book background */
   --color-2: #62958c;
   --color-3: #f5f2e9;
@@ -32,20 +32,14 @@
 
   /* LAYOUT */
 
-  --page-width: 1200px;
-
   --section-gap: 7rem;
 
   --radius: 6px;
 
   /* TYPOGRAPHY */
 
-  --font-heading: Cardo, serif;
-  --font-body: Cardo, serif;
-
   --edge-margin: 2rem;
 }
-
 
 .theme-minimal {
   --bg: #efecdd;
@@ -78,15 +72,33 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-    font-family: "EB Garamond", serif;
+  font-family: "EB Garamond", serif;
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
+  margin: 0;
+  position: relative;
 }
 
-button, 
-input, 
-select, 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url('new_images/paper-grain.png');
+  background-repeat: repeat;
+  mix-blend-mode: multiply; /* Blends texture with background */
+  opacity: 0.2; /* Adjust for subtlety */
+  pointer-events: none; /* Allows clicking through the overlay */
+}
+
+
+button,
+input,
+select,
 textarea {
   font-family: inherit;
 }
@@ -108,7 +120,9 @@ textarea {
 
 .theme-preview-image {
   width: 100%;
+  margin: auto;
   transition: opacity 0.95s ease;
+  border: 6px solid var(--primary);
 }
 
 .theme-preview-image.fade {
@@ -139,10 +153,9 @@ nav {
 /* -------------------- */
 
 .hero {
-  max-width: var(--page-width);
-
+  
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 0rem;
   /* padding:4rem 2rem; */
 
   display: grid;
@@ -150,22 +163,15 @@ nav {
   grid-template-columns: 1fr 1fr;
 
   gap: 1rem;
-  height: 40vh;
+  /* height: 40vh; */
 }
 
-.hero-left {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.hero-right {
-  outline: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.three-column {
+  display: grid;
+  grid-template-areas: "column-1 column-2 column-3";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  background-color: transparent;
 }
 
 h1 {
@@ -180,7 +186,6 @@ h1 {
 .hero-buttons {
   display: flex;
   flex-direction: row;
-  outline: 1px solid red;
   width: 50%;
   margin: auto;
   margin-top: 3rem;
@@ -200,24 +205,24 @@ h1 {
   padding: 0.2rem;
   min-width: 8rem;
   border-radius: var(--radius);
-
   text-decoration: none;
   transition: 0.2s;
+
 }
 
 .button-solid {
-  border: 4px solid var(--button-border);
+  border: 2px solid var(--button-border);
   background: var(--button-fill);
   color: var(--button-filled-text);
 }
 
 .button-solid:hover {
-  border: 4px solid var(--primary);
+  border: 1px solid var(--primary);
   background: var(--primary-hover);
 }
 
 .button-outline {
-  border: 4px solid var(--button-border);
+  border: 1px solid var(--button-border);
   background: transparent;
   color: var(--button-text);
 }
@@ -230,12 +235,24 @@ h1 {
 
 /* -------------------- */
 
+.png-icon {
+  /* Control the exact size of your icon */
+  width: 32px;
+  height: 32px;
+  
+  /* Ensures the PNG scales perfectly without stretching */
+  object-fit: contain; 
+  
+  /* Optional: Vertically aligns the icon nicely with nearby text */
+  vertical-align: middle; 
+}
+
 .svg-parent .svg-rect-1 {
-  fill: var(--button-fill)
+  fill: var(--button-fill);
 }
 
 .svg-parent .svg-rect-2 {
-  fill: var(--button-filled-text)
+  fill: var(--button-filled-text);
 }
 
 .theme-preview {
@@ -302,9 +319,11 @@ h1 {
 }
 
 .story-is-a-book {
-  outline: 1px solid red;
-  text-align: right;
+  text-align: center;
+  /* margin: auto; */
   font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .im-fell-english-sc-regular {
@@ -312,8 +331,6 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
-
-
 
 .twelve-container {
   display: grid;
@@ -350,13 +367,17 @@ h1 {
 
 p {
   font-size: 1rem;
+  margin: 0.5rem;
 }
 
 a,
+a:link, 
+a:visited, 
+a:hover, 
+a:active,
 a:visited {
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
 }
 
 .other-container {
@@ -418,7 +439,6 @@ a:visited {
 .small-hook {
   font-size: 2rem;
   text-align: center;
-  font-weight: bold;
 }
 
 .skinny {
@@ -451,13 +471,40 @@ a:visited {
   border-radius: 20% 20% 0 0; */
 }
 
+.banner-section {
+    position: relative;
+    isolation: isolate;
+    background: var(--primary);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+}
+
+.banner-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-image: url("new_images/paper-grain.png");
+    background-repeat: repeat;
+    mix-blend-mode: multiply;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
 .third-section {
-  background: #2a252a;
+  background: #577163;
+  color: var(--bg);
   width: 100%;
-  padding: rem;
+  padding: 1rem;
   text-align: left;
   align-items: center;
   margin: auto;
+
+  a {
+    color: var(--bg)
+  }
 }
 
 .curved-spacer {
@@ -511,14 +558,14 @@ header {
   color: var(--qyllscape-title-text);
   font-size: 1.5rem;
   margin-left: var(--edge-width);
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .wishlist-header-button-outlined {
   background-color: transparent;
   /* background-color: #798e9c; */
   /* border: 3px solid #ae756a; */
-  border: 2px solid var(--button-border);
+  border: 1px solid var(--button-border);
   color: var(--button-text);
   padding: 4px 20px;
   white-space: nowrap;
@@ -526,7 +573,7 @@ header {
   text-decoration: none;
   /* display: inline-block; */
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 400;
   cursor: pointer;
   border-radius: 4px;
   /* margin: auto; */
@@ -536,7 +583,7 @@ header {
   background-color: var(--button-fill);
   /* background-color: #798e9c; */
   /* border: 3px solid #ae756a; */
-  border: 2px solid var(--button-border);
+  border: 1px solid var(--button-border);
   color: var(--button-filled-text);
   padding: 4px 20px;
   white-space: nowrap;
@@ -544,18 +591,13 @@ header {
   text-decoration: none;
   /* display: inline-block; */
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 400;
   cursor: pointer;
   border-radius: 4px;
   /* margin: auto; */
 }
 
-.body-button,
-.wishlist-header-button {
-  background: #439f3e;
-  border-color: #9f673e;
-  color: #f7f1e7;
-}
+
 
 .available-logo {
   display: block;
@@ -571,7 +613,48 @@ header {
 }
 .foot-boi {
   width: 80%;
-  margin-left: 7%;
+  margin: auto;
+}
+
+.foot-columns {
+  margin: auto;
+  margin-top: 0rem;
+  /* padding:4rem 2rem; */
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 1rem;
+  /* height: 40vh; */
+}
+
+.foot-left {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+}
+
+.foot-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.foot-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-start;
+}
+
+.true-footer {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; /* Removes default bullet points */
+  margin-top: 2rem;
+  padding: 0;
 }
 
 .info-title {
@@ -602,7 +685,7 @@ header {
 }
 
 .image-shadow {
-  border: 6px solid #cdbeac;
+  border: 6px solid var(--primary);
   box-shadow: 0 10px 20px rgba(53, 47, 40, 0.08);
 }
 
@@ -635,7 +718,6 @@ hr.solid {
 .spacer {
   height: 80px;
 }
-
 
 .centered-stuff {
   width: 100%;
@@ -800,27 +882,17 @@ hr.solid {
   color: #bbb;
 }
 
-.triple-grid {
-  display: grid;
-  grid-template-areas: "column-1 column-2 column-3";
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  grid-row-gap: 150px;
-  background-color: transparent;
-}
 
 .column-1 {
   grid-area: column-1;
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .column-2 {
   grid-area: column-2;
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .column-3 {
