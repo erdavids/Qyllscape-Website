@@ -15,12 +15,12 @@
 
 <body>
   <header>
-    <div class="title">Qyllscape</div>
+    <div class="title"><a href="/">Qyllscape</a></div>
     <div class="header-buttons">
-      <!-- <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
+      <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
           onclick="setLoadingText()">
-          * Human hands, not AI
-        </button></a> -->
+          Written by Human
+        </button></a>
       <!-- <a><button class="wishlist-header-button-filled">Download</button></a> -->
       <!-- <a href="https://payhip.com/b/SdnWh" class="payhip-buy-button" data-theme="blue" data-product="SdnWh">Buy Now</a>
       <a><button class="wishlist-header-button">Support</button></a> -->
@@ -33,121 +33,179 @@
     </div>
   </header>
 
-  <div style="width: 90%; margin: auto">
-    <h1 class="story-is-a-book">
-      Stories should feel hand-written.
-    </h1>
-    <section class="hero">
-      <div class="hero-left">
-        <!-- <h1 class="story-is-a-book">
+  <div class="main-content">
+    <div style="width: 90%; margin: auto">
+      <h1 class="story-is-a-book">
+        Stories should feel hand-written*
+      </h1>
+      <section class="hero">
+        <div class="hero-left">
+          <!-- <h1 class="story-is-a-book">
         Stories can feel<br />hand-written.
       </h1> -->
-        <div style=" margin: auto; text-align: center;">
-          <img id="theme-preview" class="theme-preview-image" src="new_images/example.png" alt="" />
-        </div>
+          <div style=" margin: auto; text-align: center;">
+            <img id="theme-preview" class="theme-preview-image" src="new_images/example.png" alt="" />
+          </div>
 
-        <!-- <video autoplay loop muted playsinline>
+          <!-- <video autoplay loop muted playsinline>
         <source src="new_images/pullups.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video> -->
-      </div>
+        </div>
 
-      <div class="hero-right">
-        <p>
-          Qyllscape is a simple, cozy writing editor. It is not meant to replace all other tools, it is just meant to make it
-          easier to sit down and write.
-        </p>
-        <p>
-          Keep writing and eventually the words will flow to the next page.
-        </p>
-        <p>
-          Soon you will have a book.
-        </p>
-        <br />
-        <br />
-        <p>
-          Write online for free. No account, no email, no subscription.
-        </p>
-        <p>
-          Download the desktop app for a one time purchase of $10.
+        <div class="hero-right">
+          <p>Qyllscape is a simple, cozy writing tool.</p>
+          <ul>
+            <li><b>Book Layout</b> - Words will flow from one page into the next</li>
+            <li><b>Lighting Effects</b> - Simulate basic candlelight as if the book was laying on your desk</li>
+            <li><b>Responsive Customization</b> - You can quickly change the layout and colors of your editor</li>
+            <li><b>View Control</b> - Intuitively zoom and reposition the book to find the view you need</li>
+            <li><b>No AI functionality</b> - We want to read your stories, not a machine's</li>
+          </ul>
 
-        </p>
-      </div>
-    </section>
-  </div>
+          <p>Qyllscape is not meant to replace all other tools. Qyllscape has minimal text formatting options, and is
+            not
+            designed to export finalized, publishable documents.</p>
+          <p>It is meant to make it easier to sit down and write. If it works, and you let the words hit the next page
+            enough times, soon you'll have a book.</p>
+          <br />
+          <p>
+            Write short stories online for free. No account, no email, no subscription.
+          </p>
+          <p>
+            Download the desktop app for a one time purchase of $10.
+          </p>
+        </div>
+      </section>
+    </div>
 
-  <div class="hero-buttons">
-    <a class="button button-outline" href="#">Write Online</a>
-    <a class="button button-solid" href="#">Download</a>
-  </div>
+    <div class="hero-buttons">
+      <a id="show-loading" class="button button-outline" href="/editor.html" onclick="setLoadingText()">Write Online</a>
+      <a class="button button-solid" href="#">Download</a>
+    </div>
 
-    <div style="width: 50%; margin: auto">
-    <p style="text-align: center; margin: auto">
-      Qyllscape may be missing some features you find important.
-    </p>
-    <p style="text-align: center; margin: auto">Please make sure to try the online version before purchasing.</p>
-  </div>
-
-  <div style="width: 90%; margin: auto">
-    <div style="margin-top: 2rem" class="three-column">
-      <div style="border: 1px solid red;">
-        <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
-        <p style="font-style: italic">Things always look better by candlelight.</p>
-        <p>The most unique feature available in Qyllscape is the lighting effect in your editor.</p>
-        <p>Whether you are matching the flicker of the candles on your desk or just trying to see things in a new light, it will be yours to customize.</p>
-      </div>
-      <div>
-        <img style="width: 100%" class="smaller-image-shadow" src="images/{6321}.png" />
-        <p style="font-style: italic">It's your book, not an online document.</p>
-        <p>Qyllscape helps you see your story for what it is. Feel the weight of the
-          story on the page or the e-book display.</p>
-      </div>
-      <div>
-        <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
-        <p style="font-style: italic">Things always look better by candlelight.</p>
-        <p>The most unique feature available in Qyllscape is the ability to customize lighting effects. </p>
+    <div style="width: 90%; margin: auto">
+      <div class="three-column">
+        <div>
+          <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
+          <p style="font-style: italic">Things always look better by candlelight.</p>
+          <p>The most unique feature available in Qyllscape is the lighting effect in your editor.</p>
+          <p>Whether you are matching the flicker of the candles on your desk or just trying to see things in a new
+            light,
+            it will be yours to customize.</p>
+        </div>
+        <div>
+          <img style="width: 100%" class="smaller-image-shadow" src="images/{6321}.png" />
+          <p style="font-style: italic">It's your book, not an online document.</p>
+          <p>Qyllscape helps you see your story for what it is. Feel the weight of the
+            story on the page or the e-book display.</p>
+        </div>
+        <div>
+          <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
+          <p style="font-style: italic">Things always look better by candlelight.</p>
+          <p>The most unique feature available in Qyllscape is the ability to customize lighting effects. </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div style="width: 90%; margin: auto">
-    <div class="banner-section">
-      <p>Stories should feel hand-written... by human hands, not AI.</p>
-      <p>"I strongly feel that this is an insult to life itself." - Hayao Miyazaki, criticizing a demonstration of
-        machine-learning applied to animation.</p>
-      <p>Please don't use AI to write. It's tempting, but I would encourage you to have faith in yourself and what you
-        can accomplish. Experience what
-        it is like to take an idea, develop it, rework it, doubt it, and find confidence in it again and again.</p>
 
-      <p>You will be become better the more often you repeat that process, in any discipline, and the world will be
-        better for having things in that truly only you could have created.</p>
-      <p>Life is rarely perfect, but you have an opportunity to create things that.</p>
-      <p></p>
+    <div id="purchase" class="options">
+
+      <div class="desktop-features">
+        <div style="text-align: center">
+          <h2>Free, Online Version</h2>
+          <p>Write your short story.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Projects limited to <b>7,500 words</b>.</li>
+            <li>No writing backups.</li>
+            <li>Only download / export in .txt format.</li>
+          </ul>
+        </div>
+        <div style="flex: 1"></div>
+        <div style="width: 80%; margin: auto">
+          <p style="text-align: center; margin: auto">
+            Qyllscape may be missing some features you find important.
+          </p>
+          <p style="text-align: center; margin: auto">Please try the online version before purchasing.</p>
+        </div>
+        <div style="text-align: center;">
+          <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
+              onclick="setLoadingText()">
+              Continue writing for free
+            </button></a>
+        </div>
+      </div>
+      <div class="desktop-features">
+        <div style="text-align: center">
+          <h2>Qyllscape</h2>
+          <p>Write your book.</p>
+        </div>
+        <div>
+          <ul>
+
+            <li><b>Unlimited</b> project word count.</li>
+            <li>Routinely creates local backups to help recover your writing.</li>
+            <li>Write without an internet connection.</li>
+            <li>Export in .txt, .pdf, and .docx</li>
+          </ul>
+        </div>
+        <div style="text-align: center;">
+          <iframe frameborder="0"
+            src="https://itch.io/embed/3967667?border_width=2&amp;bg_color=fbf7ef&amp;fg_color=4b5a57&amp;link_color=738c7a&amp;border_color=738c7a"
+            width="554" height="169"><a href="https://thebuffed.itch.io/qyllscape">Qyllscape by TheBuffED</a></iframe>
+        </div>
+      </div>
+
+
     </div>
+
+
+    <div style="width: 90%; margin: auto">
+      <div class="banner-section">
+        <p>* Stories should feel hand-written... by human hands, not AI.</p>
+        <p>"I strongly feel that this is an insult to life itself." - Hayao Miyazaki, criticizing a demonstration of
+          machine-learning applied to animation.</p>
+        <p>Please don't use AI to write. It's tempting, but I would encourage you to have faith in yourself and what you
+          can accomplish. Experience what
+          it is like to take an idea, develop it, rework it, doubt it, and find confidence in it again and again.</p>
+
+        <p>You will be become better the more often you repeat that process, in any discipline, and the world will be
+          better for having things in that truly only you could have created.</p>
+        <p>Life is rarely perfect, but you have an opportunity to create things that.</p>
+        <p></p>
+      </div>
+    </div>
+
   </div>
 
   <div class="spacer"></div>
   <div class="third-section">
+
     <div style="width: 90%; margin: auto; text-align: left">
-      <div class="foot-columns">
+      <!-- <div class="foot-columns">
         <div class="foot-left">
-          <a href="">About Us</a>
-          <a href="">Careers</a>
-          <a href="">Support</a>
+          <a href="/about.html">Support</a>
+          <a href="/about.html">About Us</a>
+          <a href="/careers.html">Careers</a>
         </div>
-        <div class="foot-center">
-          * Stories should be written by humans, not AI.
+
         </div>
         <div class="foot-right">
           <p>Please contact with issue:</p>
           <p>ericdavidsonwrites@gmail.com</p>
         </div>
-      </div>
+      </div> -->
       <div class="true-footer">
         <p>@2026 Seven Wishes, LLC</p>
-        <p>|</p>
-        <p>Privacy Policy</p>
-        <p>|</p>
-        <p>Terms & Conditions</p>
+        <p style="width:2rem; text-align: center;"> | </p>
+        <p><a href="/about.html">About</a></p>
+        <p style="width:2rem; text-align: center;"> | </p>
+        <p><a href="/privacy-policy.html">Privacy Policy</a></p>
+        <p style="width:2rem; text-align: center;"> | </p>
+        <p><a href="/support.html">Support</a></p>
+        <p style="width:2rem; text-align: center;"> | </p>
+        <p><a href="/about.html#careers">Careers</a></p>
       </div>
     </div>
   </div>

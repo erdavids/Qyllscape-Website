@@ -152,6 +152,12 @@ nav {
 
 /* -------------------- */
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .hero {
   
   margin: auto;
@@ -188,7 +194,6 @@ h1 {
   flex-direction: row;
   width: 50%;
   margin: auto;
-  margin-top: 3rem;
   text-align: center;
   height: 3rem;
   align-items: center;
@@ -217,7 +222,7 @@ h1 {
 }
 
 .button-solid:hover {
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   background: var(--primary-hover);
 }
 
@@ -280,7 +285,6 @@ h1 {
 .color-palette {
   float: right;
   margin-right: 4rem;
-  margin-top: 2rem;
   display: flex;
   width: 200px;
   outline: 4px solid var(--color-2);
@@ -367,7 +371,7 @@ h1 {
 
 p {
   font-size: 1rem;
-  margin: 0.5rem;
+  margin: 0rem;
 }
 
 a,
@@ -376,15 +380,33 @@ a:visited,
 a:hover, 
 a:active,
 a:visited {
+  color: inherit;
   text-decoration: none;
   font-size: 1rem;
+}
+
+input,
+textarea {
+  background: var(--primary);
+  border: none;
+  color: var(--bg);
+  padding: 5px;
+}
+
+.contactdiv {
+  margin: auto;
+  /* background: var(--primary); */
+  border: 2px solid var(--primary);
+  padding: 1rem;
+  display: flex;
+   flex-direction: column; 
+   gap: .5rem; 
+   text-align: center"
 }
 
 .other-container {
   width: 50%;
   margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 .embed-responsive {
   margin-top: 6rem;
@@ -465,7 +487,6 @@ a:visited {
 
   padding: 40px;
 
-  margin-top: 60px;
   /* display: inline-block; */
   /* padding: 20px;
   border-radius: 20% 20% 0 0; */
@@ -556,9 +577,13 @@ header {
 
 .title {
   color: var(--qyllscape-title-text);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-left: var(--edge-width);
   font-weight: 400;
+
+  a {
+    font-size: 2.5rem;
+  }
 }
 
 .wishlist-header-button-outlined {
@@ -632,7 +657,7 @@ header {
 .foot-left {
   display: flex;
   flex-direction: column;
-
+  gap: .5rem;
   justify-content: flex-start;
 }
 
@@ -660,6 +685,24 @@ header {
 .info-title {
   color: var(--primary-color);
   font-size: 1.5rem;
+}
+
+
+.options {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.desktop-features {
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--primary)
 }
 
 .info-section {
@@ -918,7 +961,6 @@ hr.solid {
 
   .image-container {
     margin: auto;
-    margin-top: 4rem;
     width: 100%;
   }
 
@@ -1002,5 +1044,19 @@ hr.solid {
     text-decoration: none;
     width: 60%;
     margin: auto;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options {
+    flex-direction: column;
+  }
+
+  .three-column {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -70,13 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function setLoadingText() {
-    var b = document.getElementById('header-editor-button')
+    var b = document.getElementById('show-loading')
     // Set button text
     b.textContent = "Loading...";
-
-    var b2 = document.getElementById('body-editor-button')
-    // Set button text
-    b2.textContent = "Loading...";
 }
 
 // Image Modal functionality
