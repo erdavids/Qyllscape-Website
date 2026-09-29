@@ -5,12 +5,6 @@
   <meta name="robots" content="noai, noimageai">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="script.js" defer></script>
-  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
@@ -40,13 +34,10 @@
       </h1>
       <section class="hero">
         <div class="hero-left">
-          <!-- <h1 class="story-is-a-book">
-        Stories can feel<br />hand-written.
-      </h1> -->
-          <div style=" margin: auto; text-align: center;">
-            <img id="theme-preview" class="theme-preview-image" src="new_images/example.png" alt="" />
-          </div>
 
+            <div style=" margin: auto; text-align: center;">
+            <img id="theme-preview" class="theme-preview-image" src="new_images/example.webp" alt="" />
+          </div>
           <!-- <video autoplay loop muted playsinline>
         <source src="new_images/pullups.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -86,7 +77,7 @@
 
     <div style="width: 90%; margin: auto">
       <div class="three-column">
-        <div>
+        <div class="image-text-column">
           <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
           <p style="font-style: italic">Things always look better by candlelight.</p>
           <p>The most unique feature available in Qyllscape is the lighting effect in your editor.</p>
@@ -94,13 +85,13 @@
             light,
             it will be yours to customize.</p>
         </div>
-        <div>
+        <div class="image-text-column">
           <img style="width: 100%" class="smaller-image-shadow" src="images/{6321}.png" />
           <p style="font-style: italic">It's your book, not an online document.</p>
           <p>Qyllscape helps you see your story for what it is. Feel the weight of the
             story on the page or the e-book display.</p>
         </div>
-        <div>
+        <div class="image-text-column">
           <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
           <p style="font-style: italic">Things always look better by candlelight.</p>
           <p>The most unique feature available in Qyllscape is the ability to customize lighting effects. </p>
@@ -108,45 +99,73 @@
       </div>
     </div>
 
+
+    <div style="width: 90%; margin: auto">
+      <div class="three-column">
+        <div class="image-text-column">
+          <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
+          <p style="font-style: italic">Things always look better by candlelight.</p>
+          <p>The most unique feature available in Qyllscape is the lighting effect in your editor.</p>
+          <p>Whether you are matching the flicker of the candles on your desk or just trying to see things in a new
+            light,
+            it will be yours to customize.</p>
+        </div>
+        <div class="image-text-column">
+          <img style="width: 100%" class="smaller-image-shadow" src="images/{6321}.png" />
+          <p style="font-style: italic">It's your book, not an online document.</p>
+          <p>Qyllscape helps you see your story for what it is. Feel the weight of the
+            story on the page or the e-book display.</p>
+        </div>
+        <div class="image-text-column">
+          <img style="width: 100%" class="smaller-image-shadow" src="images/basic-lighting.png" />
+          <p style="font-style: italic">Things always look better by candlelight.</p>
+          <p>The most unique feature available in Qyllscape is the ability to customize lighting effects. </p>
+        </div>
+      </div>
+    </div>
+
+
+
     <div id="purchase" class="options">
 
       <div class="desktop-features">
         <div style="text-align: center">
-          <h2>Free, Online Version</h2>
-          <p>Write your short story.</p>
+          <h2>Free, Web Version</h2>
+          <!-- <p>Write your short story.</p> -->
+
+          <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
+              onclick="setLoadingText()">
+              Write your short story.
+            </button></a>
         </div>
+        <!-- <div style="flex: 1"></div> -->
+
         <div>
           <ul>
             <li>Projects limited to <b>7,500 words</b>.</li>
             <li>No writing backups.</li>
             <li>Only download / export in .txt format.</li>
+            <li>Limited customization features</li>
           </ul>
         </div>
-        <div style="flex: 1"></div>
-        <div style="width: 80%; margin: auto">
-          <p style="text-align: center; margin: auto">
-            Qyllscape may be missing some features you find important.
-          </p>
-          <p style="text-align: center; margin: auto">Please try the online version before purchasing.</p>
-        </div>
-        <div style="text-align: center;">
-          <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
-              onclick="setLoadingText()">
-              Continue writing for free
-            </button></a>
-        </div>
+
+
       </div>
       <div class="desktop-features">
         <div style="text-align: center">
           <h2>Qyllscape</h2>
-          <p>Write your book.</p>
+          <a href="/editor.html"><button id="header-editor-button" class="wishlist-header-button-outlined"
+              onclick="setLoadingText()">
+              Write your book.
+            </button></a>
         </div>
+        
         <div>
           <ul>
-
             <li><b>Unlimited</b> project word count.</li>
             <li>Routinely creates local backups to help recover your writing.</li>
             <li>Write without an internet connection.</li>
+            <li>Use your own images as writing backgrounds.</li>
             <li>Export in .txt, .pdf, and .docx</li>
           </ul>
         </div>

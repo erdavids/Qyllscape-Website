@@ -10,6 +10,7 @@
 
   --bg: #fbf7ef;
   --text: #4b5a57;
+  
 
   --primary: #738c7a;
   --primary-hover: #5c847f;
@@ -68,6 +69,19 @@
   --color-2: #708c69;
   --color-3: #bdd3c3;
 }
+
+/* eb-garamond-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/Fonts/eb-garamond-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* 
+body {
+    font-family: "EB Garamond", Georgia, serif;
+} */
 
 body {
   background-color: var(--bg);
@@ -173,11 +187,22 @@ nav {
 }
 
 .three-column {
-  display: grid;
-  grid-template-areas: "column-1 column-2 column-3";
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   background-color: transparent;
+}
+
+.image-text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 h1 {
@@ -218,7 +243,7 @@ h1 {
 .button-solid {
   border: 2px solid var(--button-border);
   background: var(--button-fill);
-  color: var(--button-filled-text);
+  color: var(--button-filled-text) !important;
 }
 
 .button-solid:hover {
@@ -702,7 +727,7 @@ header {
   flex-direction: column;
   width: 100%;
   padding: 10px;
-  border: 2px solid var(--primary)
+  border: 1px solid var(--primary)
 }
 
 .info-section {
@@ -887,7 +912,7 @@ hr.solid {
 }
 
 .smaller-image-shadow:hover {
-  transform: scale(1.02);
+  transform: scale(1.06);
 }
 
 /* Modal styles */
@@ -1054,7 +1079,7 @@ hr.solid {
   .options {
     flex-direction: column;
   }
-
+  
   .three-column {
     display: flex;
     flex-direction: column;
