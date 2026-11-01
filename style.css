@@ -1,7 +1,7 @@
 * {
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* overflow-x: hidden; */
-  font-size: 20px;
+  font-size: 16px;
   box-sizing: border-box;
 }
 
@@ -78,6 +78,24 @@
   font-weight: 400;
   src: url('/Fonts/eb-garamond-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* cutive-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cutive';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cutive-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* crimson-pro-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/crimson-pro-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* 
 body {
     font-family: "EB Garamond", Georgia, serif;
@@ -86,7 +104,7 @@ body {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: "EB Garamond", serif;
+  font-family: "Crimson Pro", serif;
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
