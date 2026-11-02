@@ -1,7 +1,7 @@
 * {
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* overflow-x: hidden; */
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box;
 }
 
@@ -776,7 +776,7 @@ header {
 }
 
 .smaller-image-shadow {
-  border: 5px solid #cdbeac;
+  border: 6px solid var(--qyllscape-title-text);;
   box-shadow: 0 6px 18px rgba(53, 47, 40, 0.08);
 }
 
