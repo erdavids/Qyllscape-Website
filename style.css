@@ -262,6 +262,9 @@ h1 {
   border: 2px solid var(--button-border);
   background: var(--button-fill);
   color: var(--button-filled-text) !important;
+  height: 2.5rem;
+   align-content: center;
+   font-size: 1.4rem
 }
 
 .button-solid:hover {
@@ -273,6 +276,8 @@ h1 {
   border: 1px solid var(--button-border);
   background: transparent;
   color: var(--button-text);
+  height: 2.5rem;
+  align-content: center;
 }
 
 .button-outline:hover {
